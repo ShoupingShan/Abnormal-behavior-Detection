@@ -1,9 +1,9 @@
- # Abnormal behavior detection
- ## Introduction
+# Abnormal behavior detection
+## Introduction
       Detect whether there is any abnormal behavior occurs
     in the video surveillance. It's going to alert when it
     happens.
- ## Author
+## Author
 * [@ShoupingShan](https://github.com/ShoupingShan)
 
 * [@finaldong](https://github.com/finaldong)
@@ -15,9 +15,9 @@
 * [GTX 850M](https://www.geforce.com/hardware/notebook-gpus/geforce-gtx-850m)
 * [YOLO V2](https://pjreddie.com/darknet/yolo/)
 ## Effect
-![one](http://img.027cgb.cn/20170721/20177211871775731906.png)
+![](http://img.027cgb.cn/20170721/20177214211775731906.jpeg)
 
-![two](http://img.027cgb.cn/20170721/2017721151775731906.png)
+![](http://img.027cgb.cn/20170721/20177218121775731906.jpeg)
 ## How to run
 
 1. git clone git@github.com:ShoupingShan/Abnormal-behavior-Detection.git
