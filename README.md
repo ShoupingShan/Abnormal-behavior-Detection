@@ -25,6 +25,7 @@
 
 ## Attention
   > Makefile
+  
   > This is what I use, uncomment if you know your arch and want to specify
   
   > ARCH=  -gencode arch=compute_50,code=compute_50
