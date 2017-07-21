@@ -14,10 +14,7 @@
 * [CUDA 8.0](https://developer.nvidia.com/cuda-downloads)
 * [GTX 850M](https://www.geforce.com/hardware/notebook-gpus/geforce-gtx-850m)
 * [YOLO V2](https://pjreddie.com/darknet/yolo/)
-## Effect
-![](http://img.027cgb.cn/20170721/20177214211775731906.jpeg)
 
-![](http://img.027cgb.cn/20170721/20177218121775731906.jpeg)
 ## How to run
 
 1. git clone git@github.com:ShoupingShan/Abnormal-behavior-Detection.git
