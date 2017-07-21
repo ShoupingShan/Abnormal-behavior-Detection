@@ -18,9 +18,13 @@
 ## How to run
 
 > git clone git@github.com:ShoupingShan/Abnormal-behavior-Detection.git
+
 > cd Abnormal-behavior-Detection
+
 > make
+
 > wget https://pjreddie.com/media/files/yolo.weights
+
 > ./darknet detector demo cfg/coco.data cfg/yolo.cfg yolo.weights -c 0
 
 ## Attention
