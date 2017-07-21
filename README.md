@@ -1,7 +1,7 @@
  # Abnormal behavior detection
  ## Introduction
-      Detect whether there is any abnormal behavior occurs 
-    in the video surveillance. It's going to alert when it 
+      Detect whether there is any abnormal behavior occurs
+    in the video surveillance. It's going to alert when it
     happens.
  ## Author
 * [@ShoupingShan](https://github.com/ShoupingShan)
@@ -23,7 +23,11 @@
 4. wget https://pjreddie.com/media/files/yolo.weights
 5. ./darknet detector demo cfg/coco.data cfg/yolo.cfg yolo.weights -c 0
 
+## Attention
+  > Makefile
+  > # This is what I use, uncomment if you know your arch and want to specify
+ARCH=  -gencode arch=compute_50,code=compute_50
+
 ## Contact Us
 
   *shp395210@outlook.com*
-
