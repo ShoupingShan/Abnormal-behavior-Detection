@@ -17,16 +17,16 @@
 
 ## How to run
 
-1. git clone git@github.com:ShoupingShan/Abnormal-behavior-Detection.git
-2. cd Abnormal-behavior-Detection
-3. make
-4. wget https://pjreddie.com/media/files/yolo.weights
-5. ./darknet detector demo cfg/coco.data cfg/yolo.cfg yolo.weights -c 0
+> git clone git@github.com:ShoupingShan/Abnormal-behavior-Detection.git
+> cd Abnormal-behavior-Detection
+> make
+> wget https://pjreddie.com/media/files/yolo.weights
+> ./darknet detector demo cfg/coco.data cfg/yolo.cfg yolo.weights -c 0
 
 ## Attention
-  > Makefile
+  > **Makefile**
 
-  > This is what I use, uncomment if you know your arch and want to specify
+  > *This is what I use, uncomment if you know your arch and want to specify*
 
   > ARCH=  -gencode arch=compute_50,code=compute_50
 
