@@ -15,9 +15,9 @@
 * [GTX 850M](https://www.geforce.com/hardware/notebook-gpus/geforce-gtx-850m)
 * [YOLO V2](https://pjreddie.com/darknet/yolo/)
 ## Effect
-![](http://img.027cgb.cn/20170721/20177211871775731906.png)
+![one](http://img.027cgb.cn/20170721/20177211871775731906.png)
 
-![](http://img.027cgb.cn/20170721/2017721151775731906.png)
+![two](http://img.027cgb.cn/20170721/2017721151775731906.png)
 ## How to run
 
 1. git clone git@github.com:ShoupingShan/Abnormal-behavior-Detection.git
