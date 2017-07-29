@@ -1,0 +1,57 @@
+#ifdef OPENCV
+image ipl_to_image(IplImage* src);
+#include <stdio.h>
+#include "image.h"
+#include <cv.h>  
+#include "highgui.h"
+#include "opencv2/highgui/highgui_c.h"
+#include "opencv2/imgproc/imgproc_c.h"
+  
+  
+void video_yolo(char *cfgfile, char *weightfile, float thresh) 
+{
+	network net = parse_network_cfg(cfgfile);
+	if(weightfile){
+		load_weights(&net, weightfile);
+	}
+	detection_layer l = net.layers[net.n-1];
+	//detection_layer l=detection_layer layer;
+        printf("the first!\n");
+	cvNamedWindow("edges",1); 
+	CvCapture *cap = cvCreateFileCapture("/home/yjy/aa2.mp4");
+	clock_t time;
+
+	IplImage* frame;
+	set_batch_network(&net, 1);
+	srand(2222222);
+
+	int j;
+    	float nms=.5;
+	box *boxes = calloc(l.side*l.side*l.n, sizeof(box));
+    	float **probs = calloc(l.side*l.side*l.n, sizeof(float *));
+	for(j = 0; j < l.side*l.side*l.n; ++j) probs[j] = calloc(l.classes, sizeof(float *));
+
+    while(1){
+
+		frame = cvQueryFrame(cap);
+		if (!frame)  break;
+		cvShowImage("edges", frame);
+        
+        image im = ipl_to_image(frame);
+        image sized = resize_image(im, net.w, net.h);
+        float *X = sized.data;
+        time=clock();
+        float *predictions = network_predict(net, X);
+        convert_yolo_detections(predictions, l.classes, l.n, l.sqrt, l.side, 1, 1, thresh, probs, boxes, 0);
+        if (nms) do_nms_sort(boxes, probs, l.side*l.side*l.n, l.classes, nms);
+        draw_detections(im, l.side*l.side*l.n, thresh, boxes, probs, voc_names, voc_labels, 20);
+
+        show_image(im, "predictions");
+	free_image(im);
+        if(cvWaitKey(30) >= 0) break;
+ }
+	cvReleaseCapture(&cap);
+   	cvDestroyWindow("edges");  
+} 
+
+#endif
