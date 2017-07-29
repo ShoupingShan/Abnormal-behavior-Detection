@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1498250870 source:/home/shp/codeBlocks/SVM/main.cpp
+	<iostream>
+	"opencv2/opencv.hpp"
+	"opencv2/core/core.hpp"
+	"opencv2/imgproc/imgproc.hpp"
+	"opencv2/highgui/highgui.hpp"
+	"opencv2/ml/ml.hpp"
+	<cstdlib>
+	<stdio.h>
+	<string.h>
+	<sys/time.h>
+
