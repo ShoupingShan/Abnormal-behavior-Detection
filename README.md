@@ -34,6 +34,14 @@
 
   > ARCH=  -gencode arch=compute_50,code=compute_50
 
+
+  >**demo.c**
+
+  >line 147 and line 154
+  >Make sure you have placed your own path
+
+
+
 ## Contact Us
 
   *shp395210@outlook.com*
