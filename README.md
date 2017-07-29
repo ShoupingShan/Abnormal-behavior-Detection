@@ -38,9 +38,21 @@
   >**demo.c**
 
   >line 147 and line 154
-  >Make sure you have placed your own path
 
+  >Make sure you have replaced your own path!
 
+## How to train
+    1. First, suppose you have collected your training video files.
+       Please open Video_cut/main.cpp and then you can get many
+       subfiles each of them is 1 second. Delete some wrong files if exist.
+    2. Mark these subfiles obeying this principle: rename the filename
+       as "f****.avi" if it is abnormal. Otherwise, you needn't rename it.
+    3. Return to the Terminal:ls > ../dir.txt   
+    4. Make a copy of yolo program, and replace src/ by train/src,
+       you can get same number of subfiles but ended with .dat  .
+    5. Return to the Terminal:ls > ../dir.txt
+    6. Open train/SVM, train this model automatically.
+    7. Copy alpha.txt and out.txt to yolo files, and amend demo.c.
 
 ## Contact Us
 
