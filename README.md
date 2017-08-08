@@ -1,8 +1,6 @@
 # Abnormal behavior detection
 ## Introduction
-      Detect whether there is any abnormal behavior occurs
-    in the video surveillance. It's going to alert when it
-    happens.
+      Detect whether there is any abnormal behavior you have defined occurs  in the video surveillance. It's going to alert when it happens.
 ## Author
 * [@ShoupingShan](https://github.com/ShoupingShan)
 
@@ -42,17 +40,21 @@
   >Make sure you have replaced your own path!
 
 ## How to train
-    1. First, suppose you have collected your training video files.
-       Please open Video_cut/main.cpp and then you can get many
-       subfiles each of them is 1 second. Delete some wrong files if exist.
-    2. Mark these subfiles obeying this principle: rename the filename
-       as "f****.avi" if it is abnormal. Otherwise, you needn't rename it.
-    3. Return to the Terminal:ls > ../dir.txt   
-    4. Make a copy of yolo program, and replace src/ by train/src,
-       you can get same number of subfiles but ended with .dat  .
-    5. Return to the Terminal:ls > ../dir.txt
-    6. Open train/SVM, train this model automatically.
-    7. Copy alpha.txt and out.txt to yolo files, and amend demo.c.
+  > **First**, suppose you have collected your training video files such as "samples.avi".
+
+  >**Please** open and run Video_cut/main.cpp  then you can get many subfiles and each of them is 1 second. Delete some wrong files if exist(sometimes happens).
+
+  >**Mark** sure these subfiles obeying this principle: rename the filename as "f****.avi"(starts with 'f') if it is abnormal. Otherwise, you needn't rename it.
+
+  >**Return** to the Terminal:ls > ../dir.txt(get file path)   
+
+  >**Make** a copy of yolo program, and *replace src/* by *train/src*,you can get same number of subfiles but ended with '.dat '.
+
+  >**Return** to the Terminal:ls > ../dir.txt(get file path)
+
+  >**Open** train/SVM, train this model automatically.
+
+  >**Copy** alpha.txt and out.txt to yolo files, and amend demo.c.
 
 ## Contact Us
 
