@@ -16,6 +16,10 @@
 ## Demo
 ![ima1](https://github.com/ShoupingShan/Abnormal-behavior-Detection/blob/master/result/1500650454285.jpeg?raw=true)
 
+####  [HomePage](https://www.shpity.com/index.php/164.html)
+#### [Video-Bilibili](https://www.bilibili.com/video/BV1rg4y1v7KA)
+
+
 ## How to run
  ```
    $: git clone git@github.com:ShoupingShan/Abnormal-behavior-Detection.git
@@ -38,6 +42,8 @@
 
   >Make sure you have replaced your own path!
 
+
+
 ## How to train
   >**First**, suppose you have collected your training video files such as `"samples.avi"`.
 
@@ -47,9 +53,9 @@
 
   >**Return** to the Terminal:`ls > ../dir.txt`(get file path)   
 
-  >**Make** a copy of yolo program, and `replace src/` by `train/src`,you can get same number of subfiles but ended with '`.dat`'.
+  >**Make** a copy of yolo program, and `replace src/` by `train/src`,you can get same number of subfiles but ended with `.dat`.
 
-  >**Return** to the Terminal:ls > ../dir.txt(get file path)
+  >**Return** to the Terminal:`ls > ../dir.txt`(get file path)
 
   >**Open** `train/SVM`, train this model automatically.
 
